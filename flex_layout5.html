@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container
+        {
+            background-color:black;
+            height: 100vh;
+        }
+        .main-1
+        {
+            height:70%;
+            width: 100%;
+            background-color: brown;
+            display: flex;
+            flex-direction: row;
+        }
+        .inner-box
+        {
+            height: 33.33%;
+            width: 25%;
+            background-color: rgb(18, 46, 46);
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #box-1
+        {
+            height: 100%;
+            background-color: bisque;
+            margin: 5px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .five
+        {
+            width: 100%;
+            height: 50%;
+            background-color: blueviolet;
+        }
+        #box-2
+        {
+            height:100%;
+            width: 55%;
+            margin: 5px;
+            background-color: chartreuse;
+        }
+        #box-3
+        {
+            height: 100%;
+            width: 40%;
+        }
+        .three
+        {
+            height: 50%;
+            width: 100%;
+            background-color: aqua;
+            margin: 5px;
+        }
+        .four
+        {
+            height: 50%;
+            width: 100%;
+            background-color: aqua;
+            margin: 5px;
+        }
+        .lower
+        {
+            height: 30%;
+            width: 100%;
+            background-color: blue;
+            display: flex;
+            flex-direction: row;
+        }
+        .lower-box
+        {
+            height: 100%;
+            width: 20%;
+            background-color: palevioletred;
+            margin: 5px;
+        }
+        @media(min-width:500px)
+        {
+            section{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-1">
+            <div class="inner-box" id="box-1">
+                <div class="five">
+
+                </div>
+                <div class="six">
+
+                </div>
+
+            </div>
+            <div class="inner-box" id="box-2">
+
+            </div>
+            <div class="inner-box" id="box-3">
+                <div class="three">
+
+                </div>
+                <div class="four">
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="lower">
+            <div class="lower-box"></div>
+            <div class="lower-box"></div>
+            <div class="lower-box"></div>
+            <div class="lower-box"></div>
+            <div class="lower-box"></div>
+
+
+        </div>
+
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: rgb(217, 236, 243);
+            height: 100vh;
+            display: flex;
+
+        }
+
+        .left {
+            font-size: 1rem;
+            max-width: 50%;
+            padding: 200px;
+            background-color: rgb(191, 227, 241);
+        }
+
+        .right {
+            max-width: 50%;
+            padding: 200px;
+            background-color: rgb(191, 227, 241);
+
+        }
+
+        .box {
+            border: 2px solid black;
+            /* max-width: 50%; */
+            /* padding: 50px; */
+        }
+
+        input {
+            padding: 10px 80px;
+            margin: 5px 15px;
+            /* width: 80%; */
+        }
+
+        #log-in {
+            padding: 10px 80px;
+            width: 90%;
+            margin: 5px 15px;
+            background-color: rgb(1, 70, 97);
+        }
+
+        h1 {
+            font-size: 0.7rem;
+        }
+
+        span {
+            font-size: large;
+        }
+
+        .line {
+            text-align: center;
+        }
+
+        #new {
+            padding: 10px 50px;
+            margin: 0px 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <h1 style="font-size: 3rem;">facebook</h1>
+            <p> <h1>Facebook helps you to connect and share</h1><br>
+                <h1>people in your life</h1></p>
+
+        </div>
+        <div class="right">
+            <div class="box">
+                <input type="text" placeholder="Email address or phone no.">
+                <input type="text" placeholder="password">
+                <button id="log-in">Log in</button>
+                <h5 style="text-align: center;">forgotten password?</h5>
+                <button id="new" style="background-color: green;">Create new account</button>
+
+            </div>
+            <div class="line">
+                <h1><span>Create </span>a page for celeberity</h1>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

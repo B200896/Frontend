@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .container
+        {
+            height: 100vh;
+            background-color:rgb(217,236,243);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .left
+        {
+            height: 50%;
+            width: 30%;
+            padding: 20px 30px;
+            margin: 20px 50px;
+            /* align-items: center; */
+        
+        }
+        .right
+        {
+            height: 50%;
+            width: 30%;
+            background-color: #fff;
+           
+
+            /* align-items: center; */
+        }
+
+        .left h1{
+
+            color: rgb(59,90,154);
+            font-size: 50px;
+        }
+
+        .left h3{
+
+            text-transform: capitalize;
+        }
+        .input
+        {
+            padding: 10px 40px;
+            margin: 5px 15px;
+
+        }
+
+        .right{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right input{
+
+            padding: 10px;
+            margin: 5px;
+            width: 80%;
+            height: 15%;
+            border: 1px solid rgb(172, 169, 169);
+            border-radius: 5px;
+        
+        }
+
+        .right input[type="submit"]{
+
+            background-color: rgb(59,90,154);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .btn2{
+
+            padding: 15px;
+            background-color: rgb(6, 118, 6);
+            width: 50%;
+            font-weight: bold;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .right h1{
+
+              font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="left">
+            <h1>facebook</h1>
+            <h3>Facebook helps you connect and share with the people in your life</h3>
+
+        </div>
+        <div class="right">
+            <input type="text" placeholder="Email address or phone">
+            
+            <input type="text" placeholder="password">
+            <input type="submit" value="Log in">
+            <h1>Forgotten password?</h1>
+            <button class="btn2">Create new account</button>
+
+        </div>
+    </div>
+    
+</body>
+</html>

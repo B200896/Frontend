@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+
+            display: grid;
+            gap: 5px;
+            grid-template-rows: 1fr 11fr;
+            min-height: 100vh;
+            position: fixed;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            top: 0px;
+        }
+        .main{
+
+            display: grid;
+            grid-template-rows: masonry;
+            gap: 5px;
+            grid-template-columns: 1fr 5fr;
+        }
+
+        .box{
+
+         
+        }
+
+        #inner-box-2{
+
+            display: grid;
+            grid-template-rows: masonry;
+            gap: 5px;
+            grid-template-columns: repeat(3,auto);
+        }
+
+        #box-2{
+              
+            display: grid;
+            gap: 5px;
+            grid-template-rows: 2fr 3fr 1fr;
+           
+        }
+
+        .container-box{
+
+        }
+
+        .main-box{
+
+            background-color: skyblue;
+        }
+
+        .footer{
+
+            background-color: rgb(132, 244, 132);
+        }
+
+        .header{
+
+            background-color: rgb(59, 234, 59);
+        }
+
+        .container-box:nth-child(1){
+
+            background-color: greenyellow;
+
+        }
+
+        .container-box:nth-child(2){
+
+            background-color: green;
+            
+        }
+
+        .container-box:nth-child(3){
+
+            background-color: rgb(58, 84, 58);
+            
+        }
+
+        #box-1{
+
+            background-color: skyblue;
+        }
+
+
+        @media (max-width:624px) {
+
+            .main{
+
+                display: block;
+                height: 20vh;
+              
+            }
+
+            #inner-box-2{
+
+                display: block;
+              
+            }
+            
+        }
+       
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <center>
+            <h1>Header</h1>
+        </center>
+    </div>
+
+    <div class="main">
+        <div class="box" id="box-1">
+            <h1>Slidebar</h1>
+        </div>
+        <div class="box" id="box-2">
+            <div class="inner-box main-box">
+                <h1>Main</h1>
+            </div>
+            <div class="inner-box" id="inner-box-2">
+                <div class="container-box">
+                    <h1>Content 1</h1>
+                </div>
+                <div class="container-box">
+                    <h1>Content 2</h1>
+                </div>
+                <div class="container-box">
+                    <h1>Content 3</h1>
+                </div>
+            </div>
+            <div class="inner-box footer">
+                <h1>Footer</h1>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
